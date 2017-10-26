@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "web development portfolio for jeremy wells",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "popper": "^1.0.0"
+  },
   "devDependencies": {
     "concat": "^1.0.3",
     "connect": "^3.6.5",
