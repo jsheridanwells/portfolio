@@ -1,7 +1,20 @@
-div {
-	border: 1px solid red;
-}
+//temp constructor styles, delete when finished
 
+// div {
+// 	border: 1px solid red;
+// }
+
+// nav {
+// 	opacity: 0.5;
+// }
+
+// .row {
+// 	border: 1px solid blue;
+// }
+
+// section {
+// 	border: 1px solid red;
+// }
 // font stack
 
 
@@ -16,7 +29,7 @@ $break-large: 1200px;
 
 // nav bar
 #appearing-nav {
-	display: none;
+	display: initial;
 }
 
 
@@ -26,7 +39,7 @@ $break-large: 1200px;
 }
 
 h1.nav-header {
-	@media screen and (min-with: $break-med) {
+	@media screen and (min-width: $break-med) {
 		display: inline;
 	}
 	font-size: 2em;
@@ -38,22 +51,27 @@ h3.nav-header {
 }
 
 //general section styles
-
 section {
-	height: 90vh;
-	border: 1px solid green;
-	margin-top: 0.5em;
+	border: 1px solid white;
+}
+
+.section-row {
+	margin-top: 12em;
+	height: 68vh;
 	@media screen and (min-width: $break-med) {
-		margin-top: 0.5em;
+		margin-top: 4em;
 		height: 88vh;
 	}
-
 }
 
-.top-with-menu {
-	height: 75vh;
-	margin-top: 10em;
-	@media screen and (min-width: $break-med) {
-		margin-top: 5em;
-	}
+
+//footer styles
+footer {
+	height: 2em;
 }
+
+
+
+
+
+
