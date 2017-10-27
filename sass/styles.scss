@@ -1,0 +1,59 @@
+div {
+	border: 1px solid red;
+}
+
+// font stack
+
+
+
+// colors
+
+
+// media queries
+$break-small: 375px;
+$break-med: 376px;
+$break-large: 1200px;
+
+// nav bar
+#appearing-nav {
+	display: none;
+}
+
+
+.brand {
+	width: 50%;
+	text-align: center;
+}
+
+h1.nav-header {
+	@media screen and (min-with: $break-med) {
+		display: inline;
+	}
+	font-size: 2em;
+}
+
+h3.nav-header {
+	@extend h1.nav-header;
+	font-size: 1em;
+}
+
+//general section styles
+
+section {
+	height: 90vh;
+	border: 1px solid green;
+	margin-top: 0.5em;
+	@media screen and (min-width: $break-med) {
+		margin-top: 0.5em;
+		height: 88vh;
+	}
+
+}
+
+.top-with-menu {
+	height: 75vh;
+	margin-top: 10em;
+	@media screen and (min-width: $break-med) {
+		margin-top: 5em;
+	}
+}
