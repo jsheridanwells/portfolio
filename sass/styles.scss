@@ -34,47 +34,45 @@ $break-med-lg: 920px;
 $break-large: 1200px;
 
 // nav bar
-#appearing-nav {
-	z-index: 0;
-	// position: fixed;
+.nav-div {
+	z-index: 10;
+	position: fixed;
+	width: 90%;
 }
 
 .menu-toggle {
-  position: fixed;
   padding: 0.8em;
-  top: 1em;
-  right: .5em;
   cursor: pointer;
 
   @media screen and (min-width: $break-med-lg) {
-	display: none;
+  display: none;
   }
 }
 
-nav ul {
+nav ul.nav-menu {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    padding: 0;
+    padding-left: 2em;
     margin: 0;
     display: none;
 
     @media screen and (min-width: $break-med-lg) {
+		flex-direction: row;
 		display: initial;
 	}
 }
 
-nav ul.opening {
-    display: block;
-    height: 30px;
-}
-
 nav li {
-
+	display: block;
 	@media screen and (min-width: $break-med) {
 		display: inline-block;
 		margin-left: 3em;
 	}
+}
+
+nav ul.show {
+	display: initial;
 }
 
 .brand {

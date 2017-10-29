@@ -1,7 +1,7 @@
 'use strict';
 $('.menu-toggle').click(function() {
 
-  $('ul').toggleClass('opening');
-  $(this).toggleClass('open');
+  $(this).toggleClass('change');
+  $('.nav-menu').toggleClass('show');
 
 });
