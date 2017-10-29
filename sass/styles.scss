@@ -1,20 +1,16 @@
 //temp constructor styles, delete when finished
 
-// div {
-// 	border: 1px solid red;
-// }
+div {
+	border: 1px solid red;
+}
 
-// nav {
-// 	opacity: 0.5;
-// }
+.row {
+	border: 1px solid blue;
+}
 
-// .row {
-// 	border: 1px solid blue;
-// }
-
-// section {
-// 	border: 1px solid red;
-// }
+nav {
+	opacity: 0.2;
+}
 
 @import 'fading_animations';
 @import 'splash';
@@ -58,7 +54,7 @@ $break-large: 1200px;
 	position: fixed;
 	left: 0;
 	width: 100%;
-	min-height: 100px;
+	min-height: 12vh;
 	margin: 0 auto;
     background-color: $brown;
     @include box-shadow1();
@@ -152,12 +148,12 @@ section {
 	border: 1px solid green;
 }
 
-.section-row {
-	margin-top: 12em;
-	height: 68vh;
-	@media screen and (min-width: $break-med) {
-		margin-top: 4em;
-		height: 88vh;
+#about {
+	margin-top: 15vh;
+	height: 83vh;
+	@media screen and (min-width: $break-med-lg) {
+		margin-top: 18vh;
+		height: 80vh;
 	}
 }
 
