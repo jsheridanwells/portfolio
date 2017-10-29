@@ -51,6 +51,10 @@ $break-large: 1200px;
 
 .nav-menu {
 	display: none;
+
+	@media screen and (min-width: $break-med-lg) {
+		display: initial;
+	}
 }
 
 .show {
@@ -64,7 +68,6 @@ nav ul {
 
     @media screen and (min-width: $break-med-lg) {
 		flex-direction: row;
-		display: initial;
 	}
 }
 
