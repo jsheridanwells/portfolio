@@ -49,10 +49,17 @@ $break-large: 1200px;
   }
 }
 
-nav ul.nav-menu {
+.nav-menu {
+	display: none;
+}
+
+.show {
+	display: initial;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
-    display: none;
     border: 1px solid red;
 
     @media screen and (min-width: $break-med-lg) {
@@ -61,9 +68,6 @@ nav ul.nav-menu {
 	}
 }
 
-nav ul.show {
-	display: initial;
-}
 
 nav li, a.nav-link {
 	// display: block;
@@ -75,11 +79,6 @@ nav li, a.nav-link {
 
 a.nav-link {
 	text-decoration: none;
-}
-
-.brand {
-	width: 50%;
-	text-align: center;
 }
 
 h1.nav-header {
