@@ -1,8 +1,13 @@
+.open {
+  position: fixed;
+}
+
 .hamburger,
 .hamburger::before,
 .hamburger::after {
   content: '';
   display: block;
+  position: fixed;
   background: #000;
   height: 3px;
   width: 2em;

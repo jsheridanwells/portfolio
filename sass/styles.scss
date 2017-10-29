@@ -36,10 +36,11 @@ $break-large: 1200px;
 // nav bar
 #appearing-nav {
 	z-index: 0;
+	// position: fixed;
 }
 
 .menu-toggle {
-  position: absolute;
+  position: fixed;
   padding: 0.8em;
   top: 1em;
   right: .5em;
