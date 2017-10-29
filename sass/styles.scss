@@ -23,7 +23,7 @@
 // font stack
 @import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display');
 $logo: 'Josefin Sans', serif;
-$nav-text: 'Lato', sans-serif;
+$text: 'Lato', sans-serif;
 
 
 // colors
@@ -102,7 +102,11 @@ h1.nav-logo {
 }
 
 .nav-list {
-	font-family: $nav-text;
+	font-family: $text;
+	@media screen and (min-width: $break-med-lg) {
+		font-size: 1.2em;
+		margin-top: 1.5em;
+	}
 }
 
 .show {
