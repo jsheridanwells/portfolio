@@ -50,12 +50,10 @@ $break-large: 1200px;
 }
 
 nav ul.nav-menu {
-    display: flex;
-    flex-direction: column;
     list-style-type: none;
-    padding-left: 2em;
     margin: 0;
     display: none;
+    border: 1px solid red;
 
     @media screen and (min-width: $break-med-lg) {
 		flex-direction: row;
@@ -63,16 +61,20 @@ nav ul.nav-menu {
 	}
 }
 
-nav li {
-	display: block;
+nav ul.show {
+	display: initial;
+}
+
+nav li, a.nav-link {
+	// display: block;
 	@media screen and (min-width: $break-med) {
 		display: inline-block;
 		margin-left: 3em;
 	}
 }
 
-nav ul.show {
-	display: initial;
+a.nav-link {
+	text-decoration: none;
 }
 
 .brand {
@@ -94,7 +96,7 @@ h3.nav-header {
 
 //general section styles
 section {
-	border: 1px solid white;
+	border: 1px solid green;
 }
 
 .section-row {
