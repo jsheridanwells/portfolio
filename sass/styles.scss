@@ -21,7 +21,8 @@
 @import 'hamburger';
 
 // font stack
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+$logo: 'Josefin Sans', serif;
 
 
 // colors
@@ -32,6 +33,14 @@ $break-small: 375px;
 $break-med: 376px;
 $break-med-lg: 920px;
 $break-large: 1200px;
+
+// content wrapper
+.wrapper {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 
 // nav bar
 .nav-div {
