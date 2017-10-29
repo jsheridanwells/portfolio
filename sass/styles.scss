@@ -26,7 +26,7 @@ $logo: 'Josefin Sans', serif;
 
 
 // colors
-
+$brown: #c0b283;
 
 // media queries
 $break-small: 375px;
@@ -46,15 +46,22 @@ $break-large: 1200px;
 .nav-div {
 	z-index: 10;
 	position: fixed;
-	width: 90%;
+	width: 100%;
+	margin: 0 auto;
+    background-color: $brown;
+    @media screen and (min-width: $break-med-lg) {
+	  width: 100%;
+	}
 }
 
 .menu-toggle {
+  position: absolute;
+  right: 50px;
   padding: 0.8em;
   cursor: pointer;
 
   @media screen and (min-width: $break-med-lg) {
-  display: none;
+	  display: none;
   }
 }
 
