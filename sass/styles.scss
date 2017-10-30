@@ -1,31 +1,24 @@
-//temp constructor styles, delete when finished
-
-// div {
-// 	border: 1px solid red;
-// }
-
-// nav {
-// 	opacity: 0.5;
-// }
-
-// .row {
-// 	border: 1px solid blue;
-// }
-
-// section {
-// 	border: 1px solid red;
-// }
-
 @import 'fading_animations';
 @import 'splash';
 @import 'hamburger';
 
 // font stack
-
-
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display');
+$logo: 'Josefin Sans', serif;
+$text: 'Lato', sans-serif;
 
 // colors
+$brown: #c0b283;
 
+//MATERIALZE SHADOWS
+@mixin box-shadow1() {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@mixin box-shadow2() {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 // media queries
 $break-small: 375px;
@@ -33,53 +26,95 @@ $break-med: 376px;
 $break-med-lg: 920px;
 $break-large: 1200px;
 
+// content wrapper
+.wrapper {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 // nav bar
-#appearing-nav {
-	z-index: 0;
-	// position: fixed;
+.nav-div {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 12vh;
+	margin: 0 auto;
+    background-color: $brown;
+    @include box-shadow1();
+    @media screen and (min-width: $break-med-lg) {
+	  width: 100%;
+	}
+}
+
+h1.nav-logo {
+	font-family: $logo;
+	font-size: 2em;
+	margin-left: 1em;
+	margin-top: 0.5em;
+	@media screen and (min-width: $break-med-lg) {
+		margin-top: 1em;
+	}
 }
 
 .menu-toggle {
-  position: fixed;
+  position: absolute;
+  right: 50px;
   padding: 0.8em;
-  top: 1em;
-  right: .5em;
   cursor: pointer;
 
-  @media screen and (min-width: $break-med-lg) {
-	display: none;
-  }
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+  margin-top: 0.5em;
+	@media screen and (min-width: $break-med) {
+		// margin-top: 2em;
+	}
 
     @media screen and (min-width: $break-med-lg) {
+	  display: none;
+    }
+}
+
+.nav-menu {
+	display: none;
+	padding: 0;
+	@media screen and (min-width: $break-med-lg) {
 		display: initial;
 	}
 }
 
-nav ul.opening {
-    display: block;
-    height: 30px;
-}
-
-nav li {
-
-	@media screen and (min-width: $break-med) {
-		display: inline-block;
-		margin-left: 3em;
+.nav-list {
+	font-family: $text;
+	@media screen and (min-width: $break-med-lg) {
+		font-size: 1.2em;
+		margin-top: 1.5em;
 	}
 }
 
-.brand {
-	width: 50%;
-	text-align: center;
+.show {
+	display: initial;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+
+    @media screen and (min-width: $break-med-lg) {
+		flex-direction: row;
+	}
+}
+
+
+nav li, a.nav-link {
+	display: block;
+	@media screen and (min-width: $break-med-lg) {
+		display: inline-block;
+	}
+}
+
+a.nav-link {
+	text-decoration: none;
+	color: inherit;
 }
 
 h1.nav-header {
@@ -95,27 +130,29 @@ h3.nav-header {
 }
 
 //general section styles
-section {
-	border: 1px solid white;
-}
-
-.section-row {
-	margin-top: 12em;
-	height: 68vh;
-	@media screen and (min-width: $break-med) {
-		margin-top: 4em;
-		height: 88vh;
+#about {
+	margin-top: 15vh;
+	@media screen and (min-width: $break-med-lg) {
+		margin-top: 18vh;
 	}
 }
 
+section {
+	margin-top: 2em;
+	border: 1px solid green;
+	@media screen and (min-width: $break-med-lg) {
+		margin-top: 2em;
+	}
+}
+
+.section-row {
+	height: 83vh;
+	@media screen and (min-width: $break-med-lg) {
+		height: 80vh;
+	}
+}
 
 //footer styles
 footer {
 	height: 2em;
 }
-
-
-
-
-
-
