@@ -4,6 +4,7 @@
 @import 'fonts-and-shadows';
 @import 'media';
 @import 'about';
+@import 'tech';
 
 body {
 	background-color: $offwhite;
@@ -133,7 +134,7 @@ section {
 	background-color: $white;
 	min-height: 83vh;
 	@media screen and (min-width: $break-med-lg) {
-		height: 80vh;
+		min-height: 80vh;
 	}
 }
 
