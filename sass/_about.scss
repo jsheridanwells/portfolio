@@ -1,0 +1,21 @@
+@import 'fonts-and-shadows';
+@import 'media';
+
+.image-col {
+	padding: 0;
+}
+
+img.profile-pic {
+	border: 2px solid $brown;
+	border-radius: 100%;
+	margin: 1em auto;
+	width: 50%;
+	display: block;
+}
+
+p.about-text {
+	font-family: $text;
+	@media screen and (min-width: $break-med) {
+		margin-top: 1em;
+	}
+}
