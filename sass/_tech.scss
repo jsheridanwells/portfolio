@@ -1,0 +1,26 @@
+@import 'fonts-and-shadows';
+@import 'media';
+
+.icon-row {
+	margin-top: 1em;
+	@media screen and (min-width: $break-med) {
+		margin-top: 2em;
+	}
+}
+
+.tech-section-row {
+	margin-bottom: 5em;
+}
+
+.icon-col {
+	text-align: center;
+}
+
+.tech-icon {
+	font-size: 65px;
+	display: block;
+}
+
+p.tech-text {
+	font-family: $text;	
+}
