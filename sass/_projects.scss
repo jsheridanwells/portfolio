@@ -1,0 +1,12 @@
+@import 'fonts-and-shadows';
+@import 'media';
+
+.project-img-div {
+	padding: 1em;
+	// border: 1px solid red;
+}
+
+img.projects-img {
+	width: 100%;
+	@include box-shadow1();
+}

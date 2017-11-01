@@ -17,7 +17,7 @@ p.about-text {
 	display: inline-block;
 	font-family: $text;
 	@media screen and (min-width: $break-med) {
-		margin: 3em 7em;
+		margin: 1em 7em;
 		// margin-right: 7em;
 	}
 }
