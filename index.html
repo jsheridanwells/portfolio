@@ -186,7 +186,7 @@
                 <div class="col-md-6 project-img-div">
                   <img src="img/project_screen_shots/reading-3.png" alt="" class="projects-img">
                   <div class="overlay">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#readingAttitudesModal">
                       <div class="overlay-text">
                         <h3 class="overlay-heading">Reading Attitudes Survey</h3>
                         <p>AngularJS, Firebase</p>
@@ -198,7 +198,7 @@
               <div class="row">
                 <div class="col-md-6 project-img-div">
                   <img src="img/project_screen_shots/weather-1.png" alt="" class="projects-img">
-                  <a href="#">
+                  <a href="#" data-toggle="modal" data-target="#weatherModal">
                     <div class="overlay">
                       <div class="overlay-text">
                         <h3 class="overlay-heading">Weather Viewer</h3>
@@ -208,9 +208,9 @@
                   </a>
                 </div>
               </div>
-              </div>
             </div>
           </div>
+
           <!-- scoring modal -->
           <div class="modal fade" id="scoringModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -222,7 +222,41 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  This is the modal
+                  Scoring Text Here
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- reading-attitudes modal -->
+          <div class="modal fade" id="readingAttitudesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5>Reading Attitudes Survey</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Reading Attitudes Text Here
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- weather modal -->
+          <div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5>Local Weather Viewer</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Local Weather Text Here
                 </div>
               </div>
             </div>
