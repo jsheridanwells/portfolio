@@ -26,8 +26,6 @@ var navHighlighter = function(){
       $('#contact-nav').addClass('active');
     }
 
-    console.log(top, aboutTop);
-
   });
 
 }();

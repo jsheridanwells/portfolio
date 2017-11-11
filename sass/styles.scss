@@ -123,9 +123,10 @@ h3.nav-header {
 }
 
 .active {
-	background-color: $blue;
-	border-radius: 25px;
-	padding: 8px;
+	color: $white;
+	text-shadow: 1px 1px 1px #000;
+	padding: 5px 10px;
+	border-bottom: 5px solid $blue;
 }
 
 //general section styles
