@@ -61,7 +61,12 @@ h1.nav-logo {
     }
 }
 
-.nav-menu {
+.hamburger-nav-menu {
+	display: none;
+	padding: 0;
+}
+
+.reg-nav-menu {
 	display: none;
 	padding: 0;
 	@media screen and (min-width: $break-med-lg) {

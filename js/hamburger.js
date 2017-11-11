@@ -3,17 +3,17 @@
 $('.menu-toggle').click(() => {
   $('.menu-toggle').toggleClass('change');
 
-  if ($('.nav-menu').is(':hidden')) {
-    $('.nav-menu').slideDown('slow');
+  if ($('.hamburger-nav-menu').is(':hidden')) {
+    $('.hamburger-nav-menu').slideDown('slow');
   } else {
-    $('.nav-menu').slideUp('slow');
+    $('.hamburger-nav-menu').slideUp('slow');
   }
 
 });
 
 $('.nav-link').click(() => {
 	$('.menu-toggle').toggleClass('change');
-	$('.nav-menu').slideUp('slow');
+	$('.hamburger-nav-menu').slideUp('slow');
 });
 
 
