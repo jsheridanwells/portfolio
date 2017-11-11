@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jeremy Wells || Software Developer</title>
-
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/94d00a7ede.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -95,12 +96,12 @@
               <div class="toggle-more-lg">
                 <a href="#about-more"><p class="about-more-text">Read More...</p></a>
               </div>
-              <a class="anchor" id="about-more"></a>
             </div>
           </div>
-          <div class="row section-row">
+          <a class="anchor" id="about-more"></a>
+          <div class="row section-row about-more">
             <div class="col-12">
-              <div class="about-more">
+              <div class="about-more-frame">
                   <p class="about-text">
                  My love for coding began as an undergraduate building small web sites with HTML and CSS to enhance class projects which eventually led to teaching myself Javascript as a way to puzzle out interesting programming problems. As a teacher, my goal was to help students turn from consumers of technology to using technology to realize their creative potential. The students I worked with shared stories with other children around the world, created blogs and videos, and eventually built their own electronic toys using Arduino and the Scratch programming platform.
                  </p>
@@ -337,10 +338,62 @@
         <section>
           <div class="row section-row">
             <div class="col-md-6">
-
+              <div class="heading center">
+                <h3 class="heading">Contact Me</h3>
+              </div>
+              <form action="https://formspree.io/jsheridanwells@gmail.com" method="POST">
+                <div class="form-group">
+                  <label for="contact-name" class="contact-label">Name</label>
+                  <input type="text" class="form-control contact-label" id="contact-name" placeholder="Your Name" name="contact-name">
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="contact-label">Email</label>
+                  <input type="email" class="form-control contact-label" id="contact-email" placeholder="you@youremail.com" name="contact-email">
+                </div>
+                <div class="form-group">
+                  <label for="contact-message" class="contact-label">Message</label>
+                  <textarea name="contact-message" id="contact-message" class="form-control contact-label"></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-outline-secondary contact-label">
+                    Send
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="col-md-6">
-              Right Side
+            <div class="col-md-6 center">
+              <div class="social-div">
+                <a href="mailto:jsheridanwells@gmail.com" class="social-link" target="_blank">
+                  <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+                </a>
+                <p class="social-text">
+                  Email
+                </p>
+              </div>
+              <div class="social-div">
+                <a href="https://www.linkedin.com/in/jsheridanwells/" class="social-link" target="_blank">
+                  <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+                </a>
+                <p class="social-text">
+                  LinkedIn
+                </p>
+              </div>
+              <div class="social-div">
+                <a href="https://github.com/jsheridanwells" class="social-link" target="_blank">
+                  <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+                </a>
+                <p class="social-text">
+                  GitHub
+                </p>
+              </div>
+              <div class="social-div">
+                <a href="https://twitter.com/jsheridanwells" class="social-link" target="_blank">
+                  <i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
+                </a>
+                <p class="social-text">
+                  Twitter
+                </p>
+              </div>
             </div>
           </div>
         </section>

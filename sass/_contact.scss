@@ -1,0 +1,27 @@
+@import 'fonts-and-shadows';
+
+.contact-label {
+  font-family: $text;
+  color: black;
+}
+
+button.contact-label {
+  float: right;
+}
+
+h3.social-heading {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.social-div {
+  margin-top: 2em;
+}
+
+.social-link {
+  color: inherit;
+}
+
+.social-text {
+  font-family: $text;
+}
