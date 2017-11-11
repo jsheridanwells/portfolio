@@ -4,7 +4,7 @@ var navHighlighter = function(){
 
   window.addEventListener('scroll', () => {
 
-    let buffer = 10;
+    let buffer = 100;
 
     let aboutTop = $('#about').offset().top - buffer;
     let techTop = $('#tech').offset().top - buffer;
