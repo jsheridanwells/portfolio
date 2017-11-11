@@ -1,0 +1,10 @@
+@import 'fonts-and-shadows';
+
+.contact-label {
+  font-family: $text;
+  color: black;
+}
+
+button.contact-label {
+  float: right;
+}
