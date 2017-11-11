@@ -161,7 +161,8 @@ section {
 }
 
 h3.heading {
-	@extend h1.nav-header;
+	@extend h1.nav-logo;
+	font-family: $header;
 	display: block;
 	margin: 1em auto;
 	font-size: 1.5em;
