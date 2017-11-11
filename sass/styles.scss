@@ -65,7 +65,8 @@ h1.nav-logo {
 	display: none;
 	padding: 0;
 	@media screen and (min-width: $break-med-lg) {
-		display: initial;
+		display: flex;
+		justify-content: flex-end;
 	}
 }
 
