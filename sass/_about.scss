@@ -69,6 +69,7 @@ p.about-more-text {
 .about-more {
 	display: none;
 	@media screen and (min-width: $break-med-lg) {
-
+		padding-left: 5em;
+		padding-right: 20em;
 	}
 }
