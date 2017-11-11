@@ -3,7 +3,6 @@
 var navHighlighter = function(){
 
   window.addEventListener('scroll', () => {
-
     let buffer = 100;
 
     let aboutTop = $('#about').offset().top - buffer;
