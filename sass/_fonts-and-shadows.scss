@@ -1,9 +1,11 @@
 
 // font stack
-@import url('https://fonts.googleapis.com/css?family=Lato|Josefin+Sans|IM+Fell+English');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|IM+Fell+English|IM+Fell+English+SC');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 // $logo: 'Josefin Sans', serif;
 $logo: 'IM Fell English', serif;
-$text: 'Lato', sans-serif;
+$header: 'IM Fell English SC', serif;
+$text: 'Raleway', sans-serif;
 
 //materialize shadows
 @mixin box-shadow1() {
