@@ -37,17 +37,32 @@ p.about-text {
 	@extend p.about-lead;
 	font-size: 0.9em;
 	margin-top: 2.7em;
-	display: inline-block;
+	// display: inline-block;
 	@media screen and (min-width: $break-med-lg) {
 		// margin: 1em 7em;
 	}
 }
 
-.toggle-more {
+.toggle-more-sm {
 	text-align: center;
 	@media screen and (min-width: $break-med-lg) {
+		display: none;
+	}
+}
+
+.toggle-more-lg {
+	display: none;
+	@media screen and (min-width: $break-med-lg) {
+		display: initial;
 		text-align: right;
-		padding-right: 5em;
+
+	}
+}
+
+p.about-more-text {
+	@extend p.about-text;
+	@media screen and (min-width: $break-med-lg) {
+		margin-right: 5em;
 	}
 }
 
