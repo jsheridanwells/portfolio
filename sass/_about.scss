@@ -67,6 +67,7 @@ p.about-more-text {
 }
 
 .about-more {
+	display: none;
 	@media screen and (min-width: $break-med-lg) {
 
 	}
