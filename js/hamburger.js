@@ -15,10 +15,3 @@ $('.nav-link').click(() => {
 	$('.menu-toggle').toggleClass('change');
 	$('.hamburger-nav-menu').slideUp('slow');
 });
-
-
-// $( "#clickme" ).click(function() {
-//   $( "#book" ).slideDown( "slow", function() {
-//     // Animation complete.
-//   });
-// });
