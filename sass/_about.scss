@@ -48,14 +48,22 @@ p.about-text {
 .toggle-more {
 	text-align: center;
 	@media screen and (min-width: $break-med-lg) {
-		text-align: right;
+		// text-align: right;
 	}
 }
 
-p.about-more-text {
+a.about-more-text {
 	@extend p.about-text;
+	display: block;
+	border: 1px solid $blue;
+	color: darkblue;
+	font-size: 1.5em;
+	text-decoration: none;
+	width: 100%;
+	margin: 1em auto;
+	padding: 1em 2em;
 	@media screen and (min-width: $break-med-lg) {
-		margin-right: 5em;
+		width: 50%;
 	}
 }
 
@@ -66,11 +74,4 @@ p.about-more-text {
 		padding-left: 5em;
 		padding-right: 20em;
 	}
-}
-
-button.read-more-btn:hover {
-	box-shadow: inset -3.5em 0 0 0 $blue,
-    inset 3.5em 0 0 0 $blue;
-	transition: box-shadow 0.9s;
-	webkit-transition: box-shadow 0.9s;
 }
