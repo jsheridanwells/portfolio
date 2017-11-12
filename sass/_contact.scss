@@ -7,6 +7,16 @@
 
 button.contact-label {
   float: right;
+  border: 1px solid $gray;
+}
+
+button.contact-label:hover {
+  color: $white;
+  box-shadow:
+    inset -2.5em 0 0 0 $blue,
+    inset 2.5em 0 0 0 $blue;
+  transition: box-shadow 0.25s;
+  webkit-transition: box-shadow 0.25s;
 }
 
 h3.social-heading {
