@@ -67,6 +67,16 @@ a.about-more-text {
 	}
 }
 
+a.about-more-text:hover,
+a.about-more-text:focus {
+	color: $white;
+	box-shadow:
+    inset -7em 0 0 0 $blue,
+    inset 7em 0 0 0 $blue;
+  transition: box-shadow 0.25s;
+  webkit-transition: box-shadow 0.50s;
+}
+
 .about-more {
 	display: none;
 	padding-top: 3em;
