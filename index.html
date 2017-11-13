@@ -206,7 +206,7 @@
                 <div class="col-md-6 project-img-div">
                   <img src="img/project_screen_shots/scoring1.png" alt="" class="projects-img">
                   <div class="overlay">
-                    <a href="#" data-toggle="modal" data-target="#scoringModal" class="modal-trigger">
+                    <a href="#" data-toggle="modal" data-target="#scoring-modal" class="modal-trigger">
                       <div class="overlay-text">
                         <h3 class="overlay-heading">Scoring</h3>
                         <p class="overlay-subtitle">AngularJS, D3, Firebase, Bootstrap, Sass</p>
@@ -217,7 +217,7 @@
                 <div class="col-md-6 project-img-div">
                   <img src="img/project_screen_shots/reading0.png" alt="" class="projects-img">
                   <div class="overlay">
-                    <a href="#" data-toggle="modal" data-target="#readingAttitudesModal" class="modal-trigger">
+                    <a href="#" data-toggle="modal" data-target="#reading-attitudes-modal" class="modal-trigger">
                       <div class="overlay-text">
                         <h3 class="overlay-heading">Reading Attitudes Survey</h3>
                         <p class="overlay-subtitle">AngularJS, Firebase, Bootstrap, Sass</p>
@@ -229,7 +229,7 @@
               <div class="row">
                 <div class="col-md-6 project-img-div">
                   <img src="img/project_screen_shots/local-weather0.png" alt="" class="projects-img">
-                  <a href="#" data-toggle="modal" data-target="#weatherModal" class="modal-trigger">
+                  <a href="#" data-toggle="modal" data-target="#weather-modal" class="modal-trigger">
                     <div class="overlay">
                       <div class="overlay-text">
                         <h3 class="overlay-heading">Weather Viewer</h3>
@@ -242,91 +242,7 @@
             </div>
           </div>
 
-          <!-- scoring modal -->
-          <div class="modal fade" id="scoringModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5>Scoring</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
 
-                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item slide-column active">
-                        <div class="slide-img-col">
-                          <img class="d-block w-100" src="http://placehold.it/500x300" alt="First slide">
-                        </div>
-                        <div class="slide-text-col">
-                          <p>This is the first image</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item slide-column">
-                        <div class="slide-img-col">
-                          <img class="d-block w-100" src="http://placehold.it/500x300" alt="First slide">
-                        </div>
-                        <div class="slide-text-col">
-                          <p>This is the second image</p>
-                        </div>
-                      </div>
-                      <div class="carousel-item slide-column">
-                        <div class="slide-text-col">
-                          <p>Lorem</p>
-                          <p>lorem</p>
-                        </div>
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- reading-attitudes modal -->
-          <div class="modal fade" id="readingAttitudesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5>Reading Attitudes Survey</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Reading Attitudes Text Here
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- weather modal -->
-          <div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5>Local Weather Viewer</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Local Weather Text Here
-                </div>
-              </div>
-            </div>
-          </div>
 
         </section>
 
@@ -402,6 +318,34 @@
         </footer>
       </div>
     </div>
+
+    <!-- Project Modals -->
+    <!-- Scoring Modal -->
+    <div class="modal fade" id="scoring-modal" tabindex="-1" role="dialog" aria-labelledby="scoring-title" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3 class="overlay-heading">
+              Scoring
+            </h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reading Attitudes Modal -->
+
+    <!-- Local Weather Viewer Modal -->
+
+
 
     <!-- jQuery first, then Popper, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
