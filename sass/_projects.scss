@@ -29,8 +29,7 @@ img.projects-img {
 
 .overlay-text {
 	z-index: 1;
-	white-space: nowrap;
-	color: $white;
+	color: black;
 	opacity: 1.0;
 	position: absolute;
 	overflow: hidden;
@@ -38,11 +37,21 @@ img.projects-img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 h3.overlay-heading {
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 1px 1px 1px #fff;
+	font-family: $logo;
+	font-size: 3em;
+	font-weight: 300;
+	color: black;
 	opacity: 1.0;
+}
+
+p.overlay-subtitle {
+	font-family: $text;
+	font-size: 2em;
 }
 
 .slide-column {
