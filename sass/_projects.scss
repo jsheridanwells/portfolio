@@ -1,5 +1,6 @@
 @import 'fonts-and-shadows';
 @import 'media';
+@import 'modals';
 
 .project-img-div {
 	padding: 1em;
@@ -29,8 +30,7 @@ img.projects-img {
 
 .overlay-text {
 	z-index: 1;
-	white-space: nowrap;
-	color: $white;
+	color: black;
 	opacity: 1.0;
 	position: absolute;
 	overflow: hidden;
@@ -38,11 +38,27 @@ img.projects-img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 h3.overlay-heading {
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 1px 1px 1px #fff;
+	font-family: $logo;
+	font-size: 1.5em;
+	font-weight: 300;
+	color: black;
 	opacity: 1.0;
+	@media screen and (min-width: $break-med-lg) {
+		font-size: 2em;
+	}
+}
+
+p.overlay-subtitle {
+	font-family: $text;
+	font-size: 1em;
+	@media screen and (min-width: $break-med-lg) {
+		font-size: 1.5em;
+	}
 }
 
 .slide-column {

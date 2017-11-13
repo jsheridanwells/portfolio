@@ -1,0 +1,37 @@
+@import 'fonts-and-shadows';
+
+.modal-header {
+  justify-content: flex-end;
+}
+
+h3.modal-heading {
+  margin: 1em;
+  font-family: $logo;
+  font-size: 3em;
+  font-weight: 300;
+  color: black;
+}
+
+img.modal-img {
+  width: 100%;
+}
+
+.project-description {
+  padding: 1em;
+}
+
+p.modal-text {
+  font-family: $text;
+  font-size: 1em;
+  color: black;
+  margin-top: 2em;
+}
+
+.modal-links {
+  text-align: center;
+}
+
+a.modal-text-link {
+  @extend p.modal-text;
+  color: darkblue;
+}
