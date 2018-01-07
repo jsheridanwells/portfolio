@@ -119,8 +119,23 @@
                 Projects
               </h3>
               <div class="row">
+                <!-- LIVE-POLLING-DIV -->
                 <div class="col-md-6 project-img-div">
-                  <img src="img/project_screen_shots/scoring1.png" alt="" class="projects-img">
+                  <img src="img/project_screen_shots/live-polling1.png" alt="LivePolling Image" class="projects-img">
+                  <a href="#" data-toggle="modal" data-target="#live-polling-modal" class="modal-trigger">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                          <h3 class="overlay-heading">LivePolling</h3>
+                          <p class="overlay-subtitle">
+                            Ruby on Rails, Websockets via Action Cable, sqlite, Heroku, AngularJS, D3, Google API
+                          </p>
+                        </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- SCORING-DIV -->
+                <div class="col-md-6 project-img-div">
+                  <img src="img/project_screen_shots/scoring1.png" alt="Scoring Image" class="projects-img">
                   <a href="#" data-toggle="modal" data-target="#scoring-modal" class="modal-trigger">
                     <div class="overlay">
                         <div class="overlay-text">
@@ -130,8 +145,11 @@
                     </div>
                   </a>
                 </div>
+              </div>
+              <div class="row">
+                <!-- READING-ATTITUDES-DIV -->
                 <div class="col-md-6 project-img-div">
-                  <img src="img/project_screen_shots/reading0.png" alt="" class="projects-img">
+                  <img src="img/project_screen_shots/reading0.png" alt="Reading Attitudes Survey Image" class="projects-img">
                   <a href="#" data-toggle="modal" data-target="#reading-attitudes-modal" class="modal-trigger">
                     <div class="overlay">
                         <div class="overlay-text">
@@ -141,10 +159,9 @@
                     </div>
                   </a>
                 </div>
-              </div>
-              <div class="row">
+                <!-- LOCAL-WEATHER-DIV -->
                 <div class="col-md-6 project-img-div">
-                  <img src="img/project_screen_shots/local-weather0.png" alt="" class="projects-img">
+                  <img src="img/project_screen_shots/local-weather0.png" alt="Local Weather Viewer Image" class="projects-img">
                   <a href="#" data-toggle="modal" data-target="#weather-modal" class="modal-trigger">
                     <div class="overlay">
                       <div class="overlay-text">
@@ -317,6 +334,64 @@
     </div>
 
     <!-- Project Modals -->
+    <!-- LivePolling Modal -->
+    <div class="modal fade" id="live-polling-modal" tabindex="-1" role="dialog" aria-labelledby="scoring-title" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h3 class="modal-heading">
+              LivePolling
+            </h3>
+            <div class="row">
+              <div class="col-md-6">
+                <img class="modal-img" src="img/project_screen_shots/live-polling2.png" alt="LivePolling">
+              </div>
+              <div class="col-md-6">
+                <img class="modal-img" src="img/project_screen_shots/live-polling3.png" alt="LivePolling">
+              </div>
+            </div>
+            <div class="project-description">
+              <p class="modal-text">
+                <strong>LivePolling</strong> provides a way for a teacher or a presenter to show content to an audience, solicit responses, and record data from those responses in real time.
+              </p>
+              <ul class="modal-list">
+                <strong>Features:</strong>
+                <li>The presenter can send a QR code to a presentation to an audience. With the QR code, audience members can stream the presentation on their own devices.</li>
+
+                <li>The presenter can insert poll questions or quiz questions in the presentation to ask the audience.</li>
+
+                <li>Using devices, the audience can respond to quiz questions and those responses will be recorded to a database.</li>
+
+                <li>Audience responses will be tallied and charted in the presentation in real time. The presenter can choose to show or hide tallied responses.</li>
+              </ul>
+              <p class="modal-text">
+                The LivePolling database and server-side code is built with Ruby on Rails. The client interface is created with AngularJS. Websocket connections among users are made with Rails Action Cable and Action Cable JS. D3 is used to create real-time graphs. QR codes are generated using the QRiosity library and the Google API is used for shortening URLs.
+              </p>
+            </div>
+            <div class="modal-links">
+              <a href="http://jeremywells.io/live-polling" target="_blank" class="modal-text-link">
+                <p>
+                View the demo site
+                </p>
+              </a>
+              <a href="https://github.com/jsheridanwells/LivePolling" target="_blank" class="modal-text-link">
+                <p>
+                View the source code
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Scoring Modal -->
     <div class="modal fade" id="scoring-modal" tabindex="-1" role="dialog" aria-labelledby="scoring-title" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">

@@ -35,3 +35,9 @@ a.modal-text-link {
   @extend p.modal-text;
   color: darkblue;
 }
+
+ul.modal-list {
+  li {
+    @extend p.modal-text;
+  }
+}
