@@ -1,6 +1,7 @@
 # Portfolio
 
-This repository is the source code for my portfolio site hosted at [http://jeremywells.org](http://jeremywells.org)
+This repository is the source code for my portfolio site hosted at [http://jeremywells.io](http://jeremywells.io)
+
 
 ## Installation and Setup
 
